@@ -97,45 +97,72 @@ Screenshots demonstrate a successful run of the game (not included here but shou
 8.3 Project Rationale
 The project aims to provide a simple, interactive command-line Tic Tac Toe game. It is designed to be user-friendly and demonstrate basic programming constructs for educational purposes.
 
-**Deploying to Heroku**
-Install Heroku CLI: If you haven’t installed it yet, download and install the Heroku CLI.
+# Deploying to Heroku
 
-Log in to Heroku:
-```heroku login```
+This guide will help you deploy your application to Heroku using the Heroku CLI.
 
-Create a Heroku App:
+## Prerequisites
 
-sh
-Copy code
-heroku create your-app-name
-Initialize a Git Repository (if not already done):
+- Ensure you have the Heroku CLI installed on your machine. You can download it from [here](https://devcenter.heroku.com/articles/heroku-cli).
 
-sh
-Copy code
-git init
-Add Files to Git:
+## Steps to Deploy
 
-sh
-Copy code
-git add .
-Commit Your Changes:
+1. **Login to Heroku:**
 
-sh
-Copy code
-git commit -m "Initial commit"
-Push to Heroku:
+    First, you need to login to your Heroku account. Run the following command in your terminal:
 
-sh
-Copy code
-git push heroku master
-Scale the Worker:
+    ```sh
+    heroku login
+    ```
 
-sh
-Copy code
-heroku ps:scale worker=1
-Your Tic Tac Toe game is now deployed on Heroku. To view logs and ensure your application is running correctly, use the following command:
+2. **Create a New Heroku App:**
 
-sh
-Copy code
-heroku logs --tail
-This will show the output of your application, which should include the initial welcome message. Since this is a command-line application, it’s not ideally suited for Heroku's web-centric platform, but it demonstrates the deployment process. For a fully interactive application, consider developing a web interface using frameworks like Flask or Django.
+    Create a new application on Heroku. Replace `your-app-name` with the desired name of your application:
+
+    ```sh
+    heroku create your-app-name
+    ```
+
+3. **Initialize a Git Repository:**
+
+    Initialize a new Git repository in your project directory:
+
+    ```sh
+    git init
+    ```
+
+4. **Add Files to Git:**
+
+    Add all your project files to the repository:
+
+    ```sh
+    git add .
+    ```
+
+5. **Commit Your Changes:**
+
+    Commit the changes with an initial commit message:
+
+    ```sh
+    git commit -m "Initial commit"
+    ```
+
+6. **Push to Heroku:**
+
+    Push your code to the Heroku remote repository:
+
+    ```sh
+    git push heroku master
+    ```
+
+7. **Scale Your Application:**
+
+    Scale your application to run a worker. This command scales the application to one worker dyno:
+
+    ```sh
+    heroku ps:scale worker=1
+    ```
+
+## Conclusion
+
+Following these steps, your application should now be deployed to Heroku and running. You can manage your application from the Heroku dashboard or using additional Heroku CLI commands.
