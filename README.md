@@ -101,7 +101,7 @@ The project aims to provide a simple, interactive command-line Tic Tac Toe game.
 Install Heroku CLI: If you haven’t installed it yet, download and install the Heroku CLI.
 
 Log in to Heroku:
-`heroku login`
+```heroku login```
 
 Create a Heroku App:
 
