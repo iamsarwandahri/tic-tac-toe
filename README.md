@@ -1,4 +1,31 @@
-Project Documentation
+**Project Documentation**
+
+# TicTacToe Game
+
+Welcome to the TicTacToe game! This project is a simple implementation of the classic TicTacToe game in Python. It allows two players to play the game on a 3x3 grid, taking turns to place their markers (X or O) on the board. The game checks for a winner or a tie after each move and provides an option to play again.
+
+## Features
+
+- Two-player gameplay
+- Players can choose their markers (X or O)
+- The game checks for a win or a tie after each move
+- The board is displayed after each move
+- Option to play again after a game ends
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x
+
+### Installation
+
+Clone the repository to your local machine:
+
+```sh
+git clone https://github.com/your-username/tictactoe.git
+```
+
 **1. Intended Logic and Efficient Code Implementation**
 The provided code is a basic implementation of a Tic Tac Toe game in Python. It demonstrates how to structure a game, handle user inputs, and check for winning conditions.
 
